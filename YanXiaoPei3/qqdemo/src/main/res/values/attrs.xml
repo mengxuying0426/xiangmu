@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="DragBubbleView">
+        <attr name="bubbleRadius" format="dimension"/>
+        <attr name="bubbleColor" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MenuItemView">
+        <attr name="itemText" format="string|reference"/>
+        <attr name="itemSrc" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="TagFlowLayout">
+        <!--最大选择数量-->
+        <attr name="max_select" format="integer"/>
+        <!--最大可显示行数-->
+        <attr name="limit_line_count" format="integer"/>
+        <!--是否设置多行隐藏-->
+        <attr name="is_limit" format="boolean"/>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ImageAuthenticationView">
+        <!--滑块的高度-->
+        <attr name="unitHeight" format="dimension" />
+        <!--滑块的宽度-->
+        <attr name="unitWidth" format="dimension" />
+        <!--滑块占图片高度的比例-->
+        <attr name="unitHeightScale" format="integer" />
+        <!--滑块占图片宽度的比例-->
+        <attr name="unitWidthScale" format="integer" />
+        <!--滑块边框的图片资源-->
+        <attr name="unitShadeSrc" format="reference" />
+        <!--阴影部分的图片资源-->
+        <attr name="unitShowSrc" format="reference" />
+        <!--是否需要旋转-->
+        <attr name="needRotate" format="boolean" />
+        <!--验证时的误差值-->
+        <attr name="deviate" format="integer" />
+    </declare-styleable>
+</resources>

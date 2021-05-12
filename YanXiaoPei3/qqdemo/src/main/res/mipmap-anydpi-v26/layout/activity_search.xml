@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <com.example.yanxiaopeidemo.SearchView
+        android:id="@+id/main_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.yanxiaopeidemo.SearchView>
+    <TextView
+        android:id="@+id/tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:id="@+id/search_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="名称"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="省市"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="隶属"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="操作"/>
+    </LinearLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/main_lv_search_results"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

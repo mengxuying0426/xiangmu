@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimary">#ffdd99</color>
+    <color name="colorPrimaryDark">#ffdd99</color>
+    <color name="colorAccent">#ffdd99</color>
+    <color name="gray">#bfbfbf</color>
+    <color name="yellow">#FFFFE0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="RED">#F08080</color>
+    <color name="grey">#c6c6c6</color>
+    <color name="BLACK">#000000</color>
+    <color name="color3">#ffdd99</color>
+    <color name="lightpurple">#eeccf4</color>
+    <color name="colorBlue">#00EEEE</color>
+    <color name="colorErr">#FF0000</color>
+    <color name="colorOk">#00FF7F</color>
+    <color name="colorPopupItemBg">#7FFFFF</color>"
+    <color name="colorPopupLayoutBg">#007FFF</color>
+    <color name="colorSel">#4169E1</color>
+    <color name="colorNoSel">#777</color>
+    <color name="ccc">#70000000</color>
+</resources>

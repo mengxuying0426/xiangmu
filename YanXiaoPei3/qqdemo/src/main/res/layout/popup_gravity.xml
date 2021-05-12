@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/popup_layout_bg"
+    android:paddingTop="5dp"
+    android:paddingEnd="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingStart="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_shoucang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/shoucang"/>
+        <TextView
+            android:text="添加到收藏夹"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_shoucang"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#707070"
+            android:background="@drawable/popup_item_bg" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+    <LinearLayout
+        android:id="@+id/ll_cuoti"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_cuoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/cuoti"/>
+        <TextView
+            android:text="添加到错题集"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cuoti"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#707070"
+            android:background="@drawable/popup_item_bg" />
+    </LinearLayout>
+
+</LinearLayout>

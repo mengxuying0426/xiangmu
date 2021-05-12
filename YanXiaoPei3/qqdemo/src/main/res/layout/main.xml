@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <com.example.yanxiaopeidemo.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/motive_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/title_back" />
+    </com.example.yanxiaopeidemo.view.ColorLinearLayout>
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="12dp"
+        android:columnWidth="95dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+</LinearLayout>

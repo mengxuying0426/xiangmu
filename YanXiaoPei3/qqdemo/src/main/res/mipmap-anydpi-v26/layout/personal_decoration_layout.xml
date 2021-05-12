@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yanxiaopeidemo.menu.PersonalDecoration">
+    <com.example.yanxiaopeidemo.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/motive_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/title_back" />
+    </com.example.yanxiaopeidemo.view.ColorLinearLayout>
+    <TextView
+        android:id="@+id/tv_word"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:text="主题色"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="选择一个您喜欢的主题色"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <include
+                android:id="@+id/skin_01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/activity_motive_item" />
+            <include
+                android:id="@+id/skin_02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/activity_motive_item" />
+            <include
+                android:id="@+id/skin_03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/activity_motive_item" />
+            <include
+                android:id="@+id/skin_04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/activity_motive_item" />
+
+            <include
+                android:id="@+id/skin_05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/activity_motive_item" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:text="背景"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"/>
+</LinearLayout>

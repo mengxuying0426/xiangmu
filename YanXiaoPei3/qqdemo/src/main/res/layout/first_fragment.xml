@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sc"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/pic"
+        android:layout_width="30dp"
+        android:background="@drawable/pic"
+        android:layout_gravity="center"
+        android:layout_marginLeft="120dp"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="2021年考研倒计时"
+            android:textSize="20dp"
+            android:textColor="#FF7F50"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/days_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/describe_tv"
+            android:textColor="#FF7F50"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="40sp" />
+    </LinearLayout>
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/localConvenientBanner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:autoTurningTime="3000"
+        android:layout_marginBottom="15dp"
+        app:canLoop="true"/>
+    <ListView
+        android:id="@+id/plan_list"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"/>
+</LinearLayout>
+</ScrollView>

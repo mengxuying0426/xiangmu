@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.yanxiaopeidemo">
+    <!--获取照片权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions"
+        />
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:name="com.example.yanxiaopeidemo.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SearchActivity">
+<!--            <intent-filter>-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".ScreenResultActivity" />
+
+        <activity android:name=".LoginActivity"/>
+        <activity android:name="com.example.yanxiaopeidemo.Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.ActionButtonActivity"></activity>
+        <activity android:name=".Activity.WelcomeMainActivity"/>
+        <activity android:name=".Activity.WelcomeGuideActivity"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".MainActivity"/>
+        <activity android:name="com.example.yanxiaopeidemo.mxy2.WrongTiListActivity" android:label="错题列表"/>
+        <activity android:name="com.example.yanxiaopeidemo.mxy2.WrongDetailActivity" android:label="错题详情"/>
+        <activity android:name="com.example.yanxiaopeidemo.mxy2.ExerciseActivity" android:label="练习"/>
+        <activity android:name=".mxy2.DfActivity"/>
+        <activity android:name=".mxy2.CollectionTiActivity"/>
+        <activity android:name="com.example.yanxiaopeidemo.menu.PersonalDecoration"/>
+        <activity android:name="com.example.yanxiaopeidemo.menu.PersonalCollection"/>
+        <activity android:name="com.example.yanxiaopeidemo.menu.PersonalWhiteList"/>
+        <activity android:name="com.example.yanxiaopeidemo.menu.PersonalWish"/>
+
+        <activity android:name=".menu6.DownloadPopupWin" android:theme="@style/MyDialogStyleBottom"></activity>
+        <activity android:name=".Activity4.RobotActivity"></activity>
+
+        <activity android:name=".Activity4.MusciActivity"></activity>
+        <activity android:name=".Activity4.PayActivity" />
+        <activity android:name=".Activity4.VIPYueBaoActivity" />
+
+        <activity android:name=".Activity4.TopicActivity" />
+        <activity android:name=".Activity4.HeadActivity" />
+        <activity android:name=".Activity4.ExpressionActivity" />
+        <activity android:name=".Activity4.PlanActivity" />
+        <activity android:name=".Activity4.RecordVoiceActivity" />
+        <activity android:name=".Activity4.PaySucessActivity" />
+        <activity android:name=".Activity4.MemberActivity" />
+        <activity android:name=".Activity4.ClockActivity" />
+        <activity android:name=".Activity4.TimeActivity" />
+        <activity android:name=".Activity4.PictureActivity" />
+
+        <activity android:name=".Activity4.SetActivity" />
+        <activity android:name=".Activity4.CloseActivity"/>
+        <activity android:name=".remember.RememberActivity"/>
+        <activity android:name=".remember.FindWayActivity"/>
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <receiver
+            android:name=".Activity4.AdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/lock" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.qqdemo"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+      <!--  <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.feige.pickphoto.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>-->
+    </application>
+
+</manifest>

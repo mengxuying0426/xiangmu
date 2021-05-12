@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_texts">
+        <item>首页</item>
+        <item>院校</item>
+        <item>计划</item>
+        <item>题库</item>
+        <item>休闲</item>
+    </string-array>
+    <!-- 应用主题颜色 -->
+    <integer-array name="default_color_array">
+        <item>0xFF0C89D8</item>
+        <item>0xFFB32CD1</item>
+        <item>0xFFF676C1</item>
+        <item>0xFF04BA19</item>
+        <item>0xFF18D9BF</item>
+    </integer-array>
+</resources>

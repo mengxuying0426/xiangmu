@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dld_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/timer_circle_bg">
+
+        <TextView
+            android:id="@+id/tv_d_dld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="#000"
+            android:layout_margin="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000"/>
+
+        <TextView
+            android:id="@+id/tv_d_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#e111"
+            android:layout_margin="15dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

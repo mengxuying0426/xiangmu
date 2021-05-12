@@ -1,0 +1,5 @@
+include ':dragfloatactionbuttonlibrary'
+include ':library'
+include ':qqdemo'
+include ':app'
+rootProject.name = "YanXiaoPei"

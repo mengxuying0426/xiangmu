@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/layout_songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_ic2"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_pattern"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/l_liebiao" />
+
+                <TextView
+                    android:id="@+id/tv_pattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="顺序播放"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:id="@+id/lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000"/>
+
+            <TextView
+                android:id="@+id/l_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#e111"
+                android:layout_margin="15dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
